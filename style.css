@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+   /* When clicked on, add a background color and strike out text */
+   ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  ul li.close{
+   background: #555;
+  }
+  ul li.addBtn{
+   background: red;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+ul li{
+    position: relative;
+    list-style-type: none;
+    margin: 0%;
+    padding: 10px;
+    padding-left:40px ;
+    -webkit-user-select: none;
+    -Moz-user-select: none;
+   -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+
+}
+ul li:nth-child(odd){
+    background-color: darkslategray
+    ;
+}
+ul li:hover{
+    background-color: rgb(230, 230, 230);
+
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    text-align: center;
+    margin: 0px;
+    padding: 30px 40px;
+    background-color: brown;
+    
+}
+
+  .header:after {
+     content: "";
+     display: block;
+     clear: both;
+   }
+
+
+input{
+    float: left;
+    width: 37%;
+    padding: 15px;
+    
+
+}
+
+#ajouter{
+    float: left;
+    background-color: rgb(201, 103, 103);
+    color: white;
+    margin: 0;
+    padding: 15px;
+    width: 25%;
+    cursor: pointer;
+
+}
+#ajouter:hover{
+    background-color: rgb(204, 10, 10);
+
+}
+.listeTache{
+    background-color: rgb(197, 197, 197);
+}
+
