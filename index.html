@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- Les appels de la balise des scripts doivent toujours se retrouver avant la fermeture la balise body -->
     <script src="script.js" async></script>
     <title>todo list</title>
 </head>
@@ -13,6 +14,7 @@
             <h1>LISTE DES TACHES</h1>
             <input id="tache" type="text" placeholder="Ajouter la tache...">
             <input type="date" name="" placeholder="Date du tache" id="date">
+            <!-- C'est la pire façon d'appeler une fonction javascript (tu pouvais écouter l'évenement du clique en utilisant addEventListener) -->
             <span id="ajouter" onclick="newelement()">Ajouter</span>
     </div>
     <div id="list" class="listeTache">
@@ -20,6 +22,6 @@
             
         </ul>
     </div>
-    
+    <!-- <script src="script.js" async></script>  -->
 </body>
 </html>
